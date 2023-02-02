@@ -4,17 +4,27 @@ Emulates a CHIP-8 using a variety of opcodes, 16 registers, and stack implementa
 
 ## Opcodes
 
-0x0000 return
-0x00E0 none
-0x00EE return from subroutine
-0x1000..0x1FFF jump to address (address is the last 3 values)
-0x2000..0x2FFF call at this address (address is the last 3 values)
-0x3000..0x3FFF continue if equal
-0x4000..0x4FFF continue if not equal
-0x5000..=0x5FFF continue if equal
-0x6000..=0x6FFF insert kk into register x
-0x7000..=0x7FFF add and put in x
-0x8000..=0x8FFF => bitwise ops
+* 0x0000 return
+
+* 0x00E0 none
+
+* 0x00EE return from subroutine
+
+* 0x1000..0x1FFF jump to address (address is the last 3 values)
+
+* 0x2000..0x2FFF call at this address (address is the last 3 values)
+
+* 0x3000..0x3FFF continue if equal
+
+* 0x4000..0x4FFF continue if not equal
+
+* 0x5000..=0x5FFF continue if equal
+
+* 0x6000..=0x6FFF insert kk into register x
+
+* 0x7000..=0x7FFF add and put in x
+
+* 0x8000..=0x8FFF => bitwise ops
                         0 => not
                         1 => or
                         2 => and
